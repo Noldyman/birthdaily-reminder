@@ -47,8 +47,8 @@ const sendBirthdayReminder = async () => {
 
 const startApp = () => {
   const rule = new schedule.RecurrenceRule();
-  rule.hour = 18;
-  rule.minute = 54;
+  rule.hour = 9;
+  rule.minute = 30;
   rule.tz = "Europe/Amsterdam";
 
   schedule.scheduleJob(rule, sendBirthdayReminder);
