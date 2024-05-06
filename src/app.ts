@@ -28,7 +28,9 @@ const sendBirthdayReminder = async () => {
 
   const payload = {
     title: "Birthdaily reminder",
-    message: `Todays birthdays: ${birthdays.map((b) => `${b.name} (${b.newAge})`)}.`,
+    message: `Todays birthdays: ${birthdays.map(
+      (b) => `${b.firstName} ${b.lastName} (${b.newAge})`
+    )}.`,
   };
 
   try {

@@ -1,6 +1,13 @@
 export interface Birthday {
   id: number;
-  name: string;
+  firstName: string;
+  lastName: string;
+  nickName?: string;
+  phoneNumber?: string;
+  nameSavedInPhone?: string;
   dateOfBirth: string;
+  language: string;
+  relationType: string;
+  sendAutomaticMessage: boolean;
   newAge: number;
 }
